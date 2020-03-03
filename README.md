@@ -7,6 +7,8 @@
   This project uses express to allow a user to write notes to ('GET') and delete notes from ('POST') a json file. 
   ​
   ## Table of Contents 
+  * [GIFs](#gifs)
+
   * [Installation](#installation)
   ​
   * [Usage](#usage)
@@ -16,6 +18,11 @@
   * [Tests](#tests)
   ​
   * [Questions](#questions)
+
+  ## GIFs
+  ![gif1](./Develop/public/assets/gifs/test.gif)
+  ![gif1](./Develop/public/assets/gifs/test2.gif)
+
   ​
   ## Installation
   ​
@@ -25,9 +32,10 @@
   ```
 
   ## Usage
-  ​
+  ​```
   running on PORT 3010  ​
-  ​
+  ​```
+
   ## Tests
   ​
   To run tests, run the following command:
