@@ -1,6 +1,6 @@
 
   # NoteTaker
-  [![License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://github.com/kkwoka/NoteTaker)
+ (https://github.com/kkwoka/NoteTaker)
   ​
   ## Description
   ​

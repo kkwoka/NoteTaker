@@ -1,8 +1,6 @@
 // Dependencies
 var express = require("express");
 
-// var db = require("../../../db/db");
-
 // Sets up the Express App
 let app = express();
 let PORT = process.env.PORT || 3010;
