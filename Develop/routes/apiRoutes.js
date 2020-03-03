@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../db/db.json")
 
-
 module.exports = (app) => {
     // * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
     app.get("/api/notes", function(req, res) {
@@ -20,7 +19,6 @@ module.exports = (app) => {
     app.post("/api/notes", function(req, res) {
         // gain access to the db and manipulate the data
         db.push(req.body);
-        // fs.writeFile("db.json", newVariable)
         fs.writeFile("Develop/db/db.json", JSON.stringify(db), function (err, data) {
             if (err) throw err;
         })
@@ -39,9 +37,11 @@ module.exports = (app) => {
             console.log("i: ", i);
             console.log("db[i]: ", db[i]);
             console.log("noteID: ", noteID);
+
             if (i === parseInt(noteID)) {
                 console.log("delete this: ", db[i]);
-                console.log(db.splice(db[i]));
+                //Remove 1 element at index db[i]
+                db.splice(db[i], 1);
                 // delete db[i];
                 // JSON.parse(noteID);
             }
@@ -50,8 +50,5 @@ module.exports = (app) => {
             if (err) throw err;
         });
         res.json(db);
-    
-        // res.send({type: 'DELETE'});
-            // 'Got a DELETE request at /user')
       });
 };
