@@ -34,21 +34,21 @@ module.exports = (app) => {
         let noteID = req.params.id;
 
         for (let i=0; i < db.length; i++) {
-            console.log("i: ", i);
-            console.log("db[i]: ", db[i]);
-            console.log("noteID: ", noteID);
+            // console.log("i: ", i);
+            // console.log("db[i]: ", db[i]);
+            // console.log("noteID: ", noteID);
 
             if (i === parseInt(noteID)) {
                 console.log("delete this: ", db[i]);
                 //Remove 1 element at index db[i]
-                db.splice(db[i], 1);
-                // delete db[i];
-                // JSON.parse(noteID);
+                db.splice(i, 1);
             }
         }
+        
         fs.writeFile("Develop/db/db.json", JSON.stringify(db), function (err, data) {
             if (err) throw err;
         });
+
         res.json(db);
       });
 };
