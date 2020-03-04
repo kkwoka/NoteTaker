@@ -29,11 +29,10 @@ module.exports = (app) => {
         let noteID = req.params.id;
 
         for (let i=0; i < db.length; i++) {
-
             if (i === parseInt(noteID)) {
                 console.log("delete this: ", db[i]);
                 //Remove 1 element at index db[i]
-                db.splice(i, 1);
+                db.splice(parseInt(noteID), 1);
             }
         }
 
