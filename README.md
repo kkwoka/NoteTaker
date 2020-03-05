@@ -1,7 +1,11 @@
 
   # NoteTaker
- (https://github.com/kkwoka/NoteTaker)
-  ​
+  ```
+  Github Repo: https://github.com/kkwoka/NoteTaker
+
+  Heroku: https://evening-thicket-00801.herokuapp.com/notes
+  ```
+
   ## Description
   ​
   This project uses express to allow a user to write notes to ('GET') and delete notes from ('POST') a json file. 
