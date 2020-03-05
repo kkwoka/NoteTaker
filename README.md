@@ -7,7 +7,7 @@
   This project uses express to allow a user to write notes to ('GET') and delete notes from ('POST') a json file. 
   ​
   ## Table of Contents 
-  * [GIFs](#gifs)
+  * [GIF](#gif)
 
   * [Installation](#installation)
   ​
@@ -19,9 +19,8 @@
   ​
   * [Questions](#questions)
 
-  ## GIFs
+  ## GIF
   ![gif1](./Develop/public/assets/gifs/test.gif)
-  ![gif1](./Develop/public/assets/gifs/test2.gif)
 
   ​
   ## Installation
